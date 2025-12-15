@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SlotDrop — Last-minute barber & hair slots</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, Inter, Arial, sans-serif;
+      background: #fff;
+      color: #111;
+    }
+    header {
+      padding: 24px 32px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+    h1 {
+      font-size: 44px;
+      margin-bottom: 16px;
+    }
+    p {
+      color: #555;
+      font-size: 18px;
+    }
+    .cta {
+      margin-top: 32px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 14px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid #111;
+    }
+    .btn.primary {
+      background: #111;
+      color: #fff;
+    }
+    .trust {
+      margin-top: 16px;
+      font-size: 14px;
+      color: #777;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .card {
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .price {
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .old {
+      text-decoration: line-through;
+      color: #999;
+      margin-left: 8px;
+      font-size: 16px;
+    }
+    footer {
+      border-top: 1px solid #eee;
+      padding: 32px;
+      font-size: 14px;
+      color: #666;
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>SlotDrop</div>
+  <a href="mailto:hello@slotdrop.co.uk">List a slot</a>
+</header>
+
+<div class="container">
+  <h1>Last-minute barber & hair slots — today only</h1>
+  <p>Discounted appointments from London salons when they have late cancellations. Book in under 30 seconds.</p>
+
+  <div class="cta">
+    <a href="#slots" class="btn primary">View today’s slots</a>
+    <a href="#partners" class="btn">For barbers & salons</a>
+  </div>
+
+  <div class="trust">Live availability • Secure checkout (Stripe) • London only</div>
+
+  <h2 id="slots" style="margin-top:64px;">Today’s available slots</h2>
+
+  <div class="grid">
+    <div class="card">
+      <strong>Soho Barber Co</strong>
+      <p>Men’s haircut · Today 4:10pm (40 mins)</p>
+      <div class="price">£22<span class="old">£35</span></div>
+      <a href="offer-soho-cut-1630.html" class="btn primary" style="margin-top:12px;display:inline-block;">Book now</a>
+      <div class="trust">Free cancellation up to 2 hours before</div>
+    </div>
+  </div>
+
+  <h2 id="partners" style="margin-top:80px;">For barbers and salons</h2>
+  <p>Got cancellations? Fill empty slots without discounting your full menu.</p>
+
+  <form action="mailto:hello@slotdrop.co.uk" method="post">
+    <input placeholder="Business name" required />
+    <input placeholder="Contact name" required />
+    <input placeholder="Email" type="email" required />
+    <textarea placeholder="Tell us about your cancellations"></textarea>
+    <button class="btn primary" type="submit">Submit inquiry</button>
+  </form>
+</div>
+
+<footer>
+  <div>Contact<br>hello@slotdrop.co.uk</div>
+  <div>Cancellation policy<br>Cancel up to 2 hours before your slot</div>
+  <div>Area served<br>London only</div>
+</footer>
+
+</body>
+</html>
